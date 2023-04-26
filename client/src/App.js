@@ -145,74 +145,68 @@ function App() {
           <Route
             exact
             path="/"
-            render={props => (
-              <HomePage />
-            )}
+            element={<HomePage />}
           />
 
           <Route
             exact
             path="/clients"
-            render={props => (
+            element={
               <ClientsPage
                 onAdd={addClient}
                 clients={clients}
                 deleteClient={deleteClient}
               />
-            )}
+            }
           />
           <Route
             exact
             path="/client/:_id"
-            render={props => (
-
-              <ClientPage
-                clients={clients}
-                deleteTask={deleteTask}
-              />
-            )}
+            element={<ClientPage
+              clients={clients}
+              deleteTask={deleteTask}
+            />}
           />
 
           <Route
             exact
             path="/client/:_id/updateClient"
-            render={props => (
-
-              <UpdateClientPage
-                clients={clients}
-                updateClient={updateClient}
-              />
-            )}
+            element={<UpdateClientPage
+              clients={clients}
+              updateClient={updateClient}
+            />}
           />
 
           <Route
             exact
             path="/client/:_id/task/:taskID"
-            render={props => (
+            element={
               <TaskPage
                 clients={clients}
-              />
-            )} />
+              />}
+
+          />
 
           <Route
             exact
             path="/client/:_id/task/:taskID/updateTask"
-            render={props => (
+            element={
               <UpdateTaskPage
                 clients={clients}
                 updateTask={updateTask}
               />
-            )} />
+            }
+          />
 
           <Route
             exact
             path="/client/:_id/addtask"
-            render={props => (
+            element={
               <AddTaskPage
                 clients={clients}
                 addTask={addTask}
-              />
-            )} />
+              />}
+          />
         </Routes>
       </Router>
     </div>

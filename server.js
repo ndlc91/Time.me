@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 
 const connection = mongoose.connection;
 connection.once('open', () => {
@@ -34,6 +34,6 @@ if (process.env.NODE_ENV === 'production') {
     })
 }
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 app.listen(port, () => console.log(`server started on port ${port}`));
 
