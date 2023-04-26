@@ -1,0 +1,240 @@
+body {
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.app_main_container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+
+.header_container {
+    font-size: 30px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(218, 102, 102);
+}
+
+.header_title {
+    color: white;
+}
+
+.header_subtitle {
+    color: white;
+    font-style: italic;
+}
+
+
+.addClient_container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addClient_description {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.client_list_container {
+    margin-left:20px;
+    border-radius: 30px;
+}
+
+.client_list_text {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.client_text {
+    color: white;
+}
+
+.client_container {
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(175, 51, 51);
+    border-radius: 30px;
+    background-color: rgb(175, 51, 51);
+}
+
+.client_page_button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(175, 51, 51);
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        height: 100px;
+        width: 180px;
+        cursor: pointer;
+        margin: 5px;
+}
+
+.button:hover { 
+    background-color: rgb(194, 94, 94);
+    transition: 200ms;
+}
+
+.delete_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(5, 3, 8);
+        border-radius: 40px;
+        border: 1px;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        height: 60px;
+        width: 180px;
+        cursor: pointer;
+        margin: 5px;
+        margin-right: 10px;
+}
+
+.delete_button:hover { 
+    background-color: rgb(51, 51, 51);
+    transition: 200ms;
+}
+
+.task_list_container {
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(235, 178, 178);
+    border-radius: 30px;
+    background-color: rgb(235, 178, 178);
+}
+
+.task_list_container:hover {
+    background-color: rgb(228, 159, 159);
+    transition: 200ms;
+}
+
+.task_list_text {
+    font-size: 22px;
+    color:rgb(31, 28, 28);
+}
+
+
+
+.footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ background-color: rgb(218, 102, 102);
+ font-size: 18px;
+ color: white;
+ text-align: center;
+}
+
+
+.client_main_container {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    border-radius: 30px;
+    border: 1px solid rgb(175, 51, 51);
+    border-radius: 30px;
+    background-color: rgb(175, 51, 51);
+    align-items: center;
+    
+}
+
+.client_main_container:hover {
+     background-color: rgb(194, 94, 94);
+    transition: 200ms;
+
+}
+
+.spacing {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.center_text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.addTask_inputs_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addTask_input {
+    padding-top: 20px;
+}
+
+.timers {
+    margin: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer_text {
+    font-size: 30px;
+}
+
+.welcome_text_container {
+    padding: 100px;
+
+}
+
+.welcome_text {
+    font-size: 25px;
+}
+
+input {
+    padding: 12px;
+    outline: none;
+    transition: 300ms;
+
+}
+
+input:focus {
+    border: 2px solid rgb(175, 51, 51);
+    padding: 12px;
+}
+
